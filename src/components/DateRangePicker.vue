@@ -340,14 +340,14 @@
           let thisMonthEnd = new Date(today.getFullYear(), today.getMonth() + 1, 0, 11, 59, 59, 999);
 
           return {
-            [localeData[0]]: [today, todayEnd],
-            [localeData[1]]: [yesterdayStart, yesterdayEnd],
-            [localeData[2]]: [thisMonthStart, thisMonthEnd],
-            [localeData[3]]: [
+            [localeData.range[0]]: [today, todayEnd],
+            [localeData.range[1]]: [yesterdayStart, yesterdayEnd],
+            [localeData.range[2]]: [thisMonthStart, thisMonthEnd],
+            [localeData.range[3]]: [
               new Date(today.getFullYear(), 0, 1),
               new Date(today.getFullYear(), 11, 31, 11, 59, 59, 999)
             ],
-            [localeData[4]]: [
+            [localeData.range[4]]: [
               new Date(today.getFullYear(), today.getMonth() - 1, 1),
               new Date(today.getFullYear(), today.getMonth(), 0, 11, 59, 59, 999)
             ],
